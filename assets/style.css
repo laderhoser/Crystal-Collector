@@ -35,3 +35,15 @@
 #crystals{
 clear: both;
 }
+
+#secondbottom{
+	background-color: blue;
+	width: 200px;
+	height: 50px;
+}
+#third{
+	background-color: blue;
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+}

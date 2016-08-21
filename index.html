@@ -4,7 +4,7 @@
 <head>
     <title>Crystals Collector</title>
     <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" href="assets/game.js"></script>
+    <script type="text/javascript" src="assets/game.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     </style>
 </head>
@@ -32,10 +32,10 @@
 		
 	</div>
 	<div id=crystals>
-		<img src=assets/pic1.png class = "pic" id="gem1">
-		<img src=assets/pic2.png class = "pic" id="gem2">	
-		<img src=assets/pic3.png class = "pic" id="gem3">		
-		<img src=assets/pic4.png class = "pic" id="gem4">	
+		<img src=assets/pic1.png class="pic" id="gem1">
+		<img src=assets/pic2.png class="pic" id="gem2">	
+		<img src=assets/pic3.png class="pic" id="gem3">		
+		<img src=assets/pic4.png class="pic" id="gem4">	
 	</div>
 	<div id="secondbottom">
 		<h2>Your total score is: <h2>
@@ -44,6 +44,25 @@
 
 		
 	</div>
+	<script type="text/javascript">
+		var scoreToGuess = Math.floor(Math.random() * 1000);
+        var userScore;
+        var wins;
+        var losses;
+
+        $('.pic').on('click', function() {
+                var buttonValue = Math.floor(Math.random() * 100);
+                
+                
+                 $("#third").append(buttonValue);
+
+                 
+
+                });
+
+$('#firsttop').append(scoreToGuess);
+		
+	</script>
 	
 </body>
 </html>

@@ -47,3 +47,7 @@ clear: both;
 	height: 100px;
 	margin-top: 10px;
 }
+.numLarge{
+	font-size: 25px;
+	color: green;
+}

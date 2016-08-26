@@ -52,19 +52,14 @@
 	$(document).ready(function(){
 
 		var scoreToGuess = Math.floor(Math.random() * 1000);
-        var userScore= 0;
-        var wins = 0;
-        var losses = 0;
-        var gemVal1 = 0;
-        var gemVal2 = 0;
-        var gemVal3 = 0;
-        var gemVal4 = 0;
-        var total = 0;
-        var buttonValue1 = Math.floor(Math.random() * 100);
-        var buttonValue2 = Math.floor(Math.random() * 100);	
-  		var buttonValue3 = Math.floor(Math.random() * 100);
-  		var buttonValue4 = Math.floor(Math.random() * 100);
-  		var isClicked = false
+    var wins = 0;
+    var losses = 0;
+    var total = 0;
+    var buttonValue1 = Math.floor(Math.random() * 100);
+    var buttonValue2 = Math.floor(Math.random() * 100);	
+  	var buttonValue3 = Math.floor(Math.random() * 100);
+  	var buttonValue4 = Math.floor(Math.random() * 100);
+  		
 
 
  $('#gem1').on('click', function() {
@@ -73,13 +68,13 @@
                 wins++;
                 $('#wins').html('wins: ' + wins);
                 alert("You Win!");
-                reset ();
+                resetVars ();
                 
               }else if (total > scoreToGuess){
                 losses++;
                 $('#lose').html('losses: ' + losses);
                 alert("You Lose!");
-                reset ();
+                resetVars ();
               }
               $('#third').html(total);
              });
@@ -90,13 +85,13 @@
                 wins++;
                 $('#wins').html('wins: ' + wins);
                 alert("You Win!");
-                reset ();
+                resetVars ();
                 
               }else if (total > scoreToGuess){
                 losses++;
                 $('#lose').html('losses: ' + losses);
                 alert("You Lose!");
-                reset ();
+                resetVars ();
               }
                 
 
@@ -110,13 +105,13 @@
                 wins++;
                 $('#wins').html('wins: ' + wins);
                 alert("You Win!");
-                reset ();
+                resetVars ();
                 
               }else if (total > scoreToGuess){
                 losses++;
                 $('#lose').html('losses: ' + losses);
                 alert("You Lose!");
-                reset ();
+                resetVars ();
               }
                  
               
@@ -132,13 +127,13 @@
                 wins++;
                 $('#wins').html('wins: ' + wins);
                 alert("You Win!");
-                reset ();
+                resetVars ();
                 
               }else if (total > scoreToGuess){
                 losses++;
                 $('#lose').html('losses: ' + losses);
                 alert("You Lose!");
-                reset ();
+                resetVars ();
                 
 
               }
@@ -154,12 +149,17 @@
                });
 
           
-
 $('#firsttop').html(scoreToGuess);
 
-function reset () {
+
+function resetVars () {
+  buttonValue1 = Math.floor(Math.random() * 100);
+  buttonValue2 = Math.floor(Math.random() * 100); 
+  buttonValue3 = Math.floor(Math.random() * 100);
+  buttonValue4 = Math.floor(Math.random() * 100);
   scoreToGuess = Math.floor(Math.random() * 1000);
   total = 0;
+  $('#firsttop').html(scoreToGuess);
 
 }
 

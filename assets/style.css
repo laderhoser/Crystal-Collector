@@ -20,13 +20,15 @@
 	height: 100px;
 	width: 200px;
 	float: left;
+	text-align: center;
 }
 #secondtop {
-	background-color: blue;
+	background-color: grey;
 	height: 100px;
 	width: 200px;
 	float: left;
 	margin-left: 10px;
+	text-align: center;
 
 }
 #top{
@@ -37,17 +39,19 @@ clear: both;
 }
 
 #secondbottom{
-	background-color: blue;
+	background-color: grey;
 	width: 200px;
 	height: 50px;
 }
 #third{
-	background-color: blue;
+	background-color: grey;
 	width: 200px;
 	height: 100px;
 	margin-top: 10px;
+	font-size: 15px;
+	text-align: center;
 }
 .numLarge{
-	font-size: 25px;
+	text-align: center;
 	color: green;
 }

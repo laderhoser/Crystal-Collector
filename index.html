@@ -28,9 +28,9 @@
 	</div>
 	<div id=top>
 		<div id="firsttop"></div>
-		<div id="secondtop">
+		<div id="secondtop">Players Stats:
     <p id ="wins">wins: </p>
-    <br>
+    
     <p id="lose">losses: </p>  
     </div>
 		
@@ -44,7 +44,7 @@
 	<div id="secondbottom">
 		<h2>Your total score is: <h2>
 	</div>
-	<div id="third">
+	<div id="third">Total:
 
 		
 	</div>
@@ -76,7 +76,7 @@
                 alert("You Lose!");
                 resetVars ();
               }
-              $('#third').html(total);
+              $('#third').html('Total: ' +total);
              });
          
         $('#gem2').on('click', function() {
@@ -95,7 +95,7 @@
               }
                 
 
-                $('#third').html(total);
+                $('#third').html('Total: ' +total);
                 
               });            
           
@@ -116,7 +116,7 @@
                  
               
 
-                $('#third').html(total);
+                $('#third').html('Total: ' +total);
                 
                });         
                  
@@ -139,7 +139,7 @@
               }
                 
 
-                $('#third').html(total);
+                $('#third').html('Total: ' +total);
                 
                 
                 
@@ -149,7 +149,7 @@
                });
 
           
-$('#firsttop').html(scoreToGuess);
+$('#firsttop').html('Score to guess: ' + scoreToGuess);
 
 
 function resetVars () {
@@ -159,7 +159,7 @@ function resetVars () {
   buttonValue4 = Math.floor(Math.random() * 100);
   scoreToGuess = Math.floor(Math.random() * 1000);
   total = 0;
-  $('#firsttop').html(scoreToGuess);
+  $('#firsttop').html('Score to guess: ' + scoreToGuess);
 
 }
 

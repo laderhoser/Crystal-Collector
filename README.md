@@ -1,4 +1,4 @@
-Using Javascript, jQuery, CSS, and HTML5, I was able to create this program. 
+Using Javascript, jQuery, CSS, and HTML5, I was able to create an interactive game. 
 
 Jose Martinez
 
@@ -12,7 +12,7 @@ Crystal Collectors Game
 
 You will be given a random number at the start of the game.
 
-There are four crytals below. By clicking on a crystal you will add a specific amount of points to your total score.
+There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
 
 You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
 
